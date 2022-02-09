@@ -2,7 +2,7 @@
 ################### pgpt_comp_kegg.py ############################
 # AUTHOR: Sascha Patz at university of Tuebingen, 2021-09-11
 # DESCRIPT: Takes accession file of all pgpt fasta sequences
-#           retrieved by awk 'sub(/^>/, "")' PGPT_BASE_nr_Aug2021n.fasta
+#           retrieved by awk 'sub(/^>/, "")' PGPT_protein.fasta
 #           and the megan pgpt.map file (format per line nodeID\tnodeName)
 #           and returns a tab file in format acc/tnodeID per line.
 #           The output file can be coverted to a MEGAN mappping .abin file.
