@@ -9,9 +9,15 @@
 #           # CMD: see python3 pgpt_acc-map2mapping.py -h
 ##################################################################
 vers = "0.1"
-# Include standard modules
+
+# ####### #
+# Modules #
+# ####### #
 import argparse, sys, os, io
 
+# ######### #
+# Functions #
+# ######### #
 def check_file_exist(file):
 	print("Checking file path ...")
 	if os.path.exists(file):
@@ -64,6 +70,9 @@ def main()
                 form_s = check_file_exist(args.map)
 	readaccfile(args.accession,readmeganmapfile(args.map),args.outpath,args.outname)
 
+# #### #
+# Main #
+# #### #
 if __name__ == "__main__":
 	main()
 
